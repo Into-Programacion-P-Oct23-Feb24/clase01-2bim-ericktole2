@@ -22,7 +22,6 @@ public class Ejemplo03 {
         entrada.useLocale(Locale.US);
 
         String nombre;
-        String apellido;
         String posicion;
         int edad;
         double estatura;
@@ -33,10 +32,10 @@ public class Ejemplo03 {
         jugador = entrada.nextInt();
 
         for (int i = 0; i < jugador; i++) {
-              entrada.nextLine();
+            entrada.nextLine();
             System.out.println("Ingrese el nombre del Jugador: ");
             nombre = entrada.nextLine();
-            
+
             System.out.println("Ingrese la posición en el campo: ");
             posicion = entrada.nextLine();
             System.out.println("Ingrese la edad del Jugador: ");
@@ -44,18 +43,17 @@ public class Ejemplo03 {
             System.out.println("Ingrese la estatura del Jugador");
             estatura = entrada.nextDouble();
 
-            mensajeF = String.format("%s%s-%s-,edad %d, estatura %.2f\n"
-                    
-                    ,mensajeF,
+            mensajeF = String.format("%s%d%s-%s-,edad %d, estatura %.2f\n",
+                     mensajeF,
+                    i,
                     nombre,
-                
                     posicion,
                     edad,
                     estatura);
-           
+
         }
 
-        System.out.printf("lista de jugadores\n%s",mensajeF);
+        System.out.printf("lista de jugadores\n%s", mensajeF);
 
     }
 }

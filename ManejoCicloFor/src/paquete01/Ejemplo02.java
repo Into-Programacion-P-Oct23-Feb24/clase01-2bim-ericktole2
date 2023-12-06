@@ -17,6 +17,8 @@ public class Ejemplo02 {
     public static void main(String[] args) {
         
         for (int i = 1; i <= 10; i+=2) {
+            // inicializamos i en 1 , este se va a sumar de 2 en dos para sacar los 
+            //numeros impares existenes hasta el numero 10
             System.out.printf("%d\n", i);
         }
         

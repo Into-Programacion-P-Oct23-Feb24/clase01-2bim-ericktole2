@@ -9,18 +9,25 @@ package paquete01;
  *
  * @author reroes
  */
-public class Ejemplo011 {
+public class Ejemplo014 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        for (int i = 10; i >= 0; i--) {
-            System.out.printf("%d\n", i);
+       
+        int a = 0;
+        for (int i = 1; i <= 10; i++) {
+            a = a + i;
+         
         }
-        
-        
+
+        for (int i = 1; i < 11; i++) {
+             a = a + i;
+
+        }
+        System.out.printf("%d ", a);
+
     }
-    
+
 }

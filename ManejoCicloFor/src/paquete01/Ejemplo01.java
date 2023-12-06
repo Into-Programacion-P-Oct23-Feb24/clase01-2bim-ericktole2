@@ -15,14 +15,19 @@ public class Ejemplo01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        String cadenaFinal = " ";
         for (int i = 1; i <= 10; i++) {
-            System.out.printf("%d\n", i);
+            ;
+            cadenaFinal = String.format("%s%d", cadenaFinal, i);
+            //hacermos una cadena utilizando el valor de i en el momento de esa manera al pasar al sigiente for, 
+            //estos no cambiaran y se seguira sumando en la cadena creada 
         }
-        
+
         for (int i = 1; i < 11; i++) {
-            System.out.printf("%d\n", i);
+            cadenaFinal = String.format("%s%d", cadenaFinal, i);
+
         }
+        System.out.printf("%s", cadenaFinal);
 
     }
 

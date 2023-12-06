@@ -17,6 +17,7 @@ public class Ejemplo04 {
     public static void main(String[] args) {
         
         for (int i = 20; i >= 0; i-=2) {
+            //este inicia el i en 20 y va restando de 2 en 2 hasta qeu sea mayor o igual a 0
             System.out.printf("%d\n", i);
         }
       
